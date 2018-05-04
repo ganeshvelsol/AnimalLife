@@ -10,8 +10,8 @@
         <ImageView
             android:id="@+id/left"
             android:src="@drawable/left"
-            android:layout_width="25dp"
-            android:layout_height="20dp"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
             android:layout_alignBottom="@+id/image_show"
             android:layout_toLeftOf="@+id/image_show"
             android:layout_toStartOf="@+id/image_show" />
@@ -26,8 +26,8 @@
 
         <ImageView
             android:id="@+id/right"
-            android:layout_width="25dp"
-            android:layout_height="20dp"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
             android:layout_alignBottom="@+id/image_show"
             android:layout_toEndOf="@+id/image_show"
             android:layout_toRightOf="@+id/image_show"

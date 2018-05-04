@@ -1,5 +1,6 @@
 package com.velsol.animallife;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view)
             {
                 //call animals relative activity
-
+                startActivity(new Intent(MainActivity.this,AnimalActivity.class));
             }
         });
         mcardFruits.setOnClickListener(new View.OnClickListener() {
