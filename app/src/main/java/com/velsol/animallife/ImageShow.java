@@ -73,6 +73,71 @@ public class ImageShow extends AppCompatActivity
                 mImage.setImageResource(R.drawable.lion);
                 break;
             }
+            case 12:
+            {
+                mImage.setImageResource(R.drawable.macaw);
+                break;
+            }
+            case 13:
+            {
+                mImage.setImageResource(R.drawable.newt);
+                break;
+            }
+            case 14:
+            {
+                mImage.setImageResource(R.drawable.ostrich);
+                break;
+            }
+            case 15:
+            {
+                mImage.setImageResource(R.drawable.pig);
+                break;
+            }
+            case 16:
+            {
+                mImage.setImageResource(R.drawable.quail);
+                break;
+            }
+            case 17:
+            {
+                mImage.setImageResource(R.drawable.rat);
+                break;
+            }
+            case 18:
+            {
+                mImage.setImageResource(R.drawable.sheep);
+                break;
+            }
+            case 19:
+            {
+                mImage.setImageResource(R.drawable.tiger);
+                break;
+            }
+            case 20:
+            {
+                mImage.setImageResource(R.drawable.urial);
+                break;
+            }
+            case 21:
+            {
+                mImage.setImageResource(R.drawable.wolf);
+                break;
+            }
+            case 22:
+            {
+                mImage.setImageResource(R.drawable.xerus);
+                break;
+            }
+            case 23:
+            {
+                mImage.setImageResource(R.drawable.yak);
+                break;
+            }
+            case 24:
+            {
+                mImage.setImageResource(R.drawable.zebra);
+                break;
+            }
             default:
                 break;
         }

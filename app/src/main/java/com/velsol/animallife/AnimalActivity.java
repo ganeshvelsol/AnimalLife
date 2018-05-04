@@ -136,31 +136,286 @@ public class AnimalActivity extends AppCompatActivity
                 case 6:
                 {
                     mImageDisplay.setImageResource(R.drawable.girafee);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",6);
+                            startActivity(intent);
+                        }
+                    });
                     break;
                 }
                 case 7:
                 {
                     mImageDisplay.setImageResource(R.drawable.hippopotamus);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",7);
+                            startActivity(intent);
+                        }
+                    });
                     break;
                 }
                 case 8:
                 {
                     mImageDisplay.setImageResource(R.drawable.iguana);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",8);
+                            startActivity(intent);
+                        }
+                    });
                     break;
                 }
                 case 9:
                 {
                     mImageDisplay.setImageResource(R.drawable.jaguar);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",9);
+                            startActivity(intent);
+                        }
+                    });
                     break;
                 }
                 case 10:
                 {
                     mImageDisplay.setImageResource(R.drawable.kangaroo);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",10);
+                            startActivity(intent);
+                        }
+                    });
                     break;
                 }
                 case 11:
                 {
                     mImageDisplay.setImageResource(R.drawable.lion);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",11);
+                            startActivity(intent);
+                        }
+                    });
+                    break;
+                }
+                case 12:
+                {
+                    mImageDisplay.setImageResource(R.drawable.macaw);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",12);
+                            startActivity(intent);
+                        }
+                    });
+                    break;
+                }
+                case 13:
+                {
+                    mImageDisplay.setImageResource(R.drawable.newt);;
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",13);
+                            startActivity(intent);
+                        }
+                    });
+                    break;
+                }
+                case 14:
+                {
+                    mImageDisplay.setImageResource(R.drawable.ostrich);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",14);
+                            startActivity(intent);
+                        }
+                    });
+                    break;
+                }
+                case 15:
+                {
+                    mImageDisplay.setImageResource(R.drawable.pig);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",15);
+                            startActivity(intent);
+                        }
+                    });
+                    break;
+                }
+                case 16:
+                {
+                    mImageDisplay.setImageResource(R.drawable.quail);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",16);
+                            startActivity(intent);
+                        }
+                    });
+                    break;
+                }
+                case 17:
+                {
+                    mImageDisplay.setImageResource(R.drawable.rat);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",17);
+                            startActivity(intent);
+                        }
+                    });
+                    break;
+                }
+                case 18:
+                {
+                    mImageDisplay.setImageResource(R.drawable.sheep);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",18);
+                            startActivity(intent);
+                        }
+                    });
+                    break;
+                }
+                case 19:
+                {
+                    mImageDisplay.setImageResource(R.drawable.tiger);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",19);
+                            startActivity(intent);
+                        }
+                    });
+                    break;
+                }
+                case 20:
+                {
+                    mImageDisplay.setImageResource(R.drawable.urial);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",20);
+                            startActivity(intent);
+                        }
+                    });
+                    break;
+                }
+                case 21:
+                {
+                    mImageDisplay.setImageResource(R.drawable.wolf);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",21);
+                            startActivity(intent);
+                        }
+                    });
+                    break;
+                }
+                case 22:
+                {
+                    mImageDisplay.setImageResource(R.drawable.xerus);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",22);
+                            startActivity(intent);
+                        }
+                    });
+                    break;
+                }
+                case 23:
+                {
+                    mImageDisplay.setImageResource(R.drawable.yak);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",23);
+                            startActivity(intent);
+                        }
+                    });
+                    break;
+                }
+                case 24:
+                {
+                    mImageDisplay.setImageResource(R.drawable.zebra);
+                    mImageDisplay.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                            intent.putExtra("image_url",24);
+                            startActivity(intent);
+                        }
+                    });
                     break;
                 }
                 default:
@@ -334,6 +589,201 @@ public class AnimalActivity extends AppCompatActivity
                     {
                         Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
                         intent.putExtra("image_url",11);
+                        startActivity(intent);
+                    }
+                });
+                break;
+            }
+            case 12:
+            {
+                mImageDisplay.setImageResource(R.drawable.macaw);
+                mImageDisplay.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                        intent.putExtra("image_url",12);
+                        startActivity(intent);
+                    }
+                });
+                break;
+            }
+            case 13:
+            {
+                mImageDisplay.setImageResource(R.drawable.newt);;
+                mImageDisplay.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                        intent.putExtra("image_url",13);
+                        startActivity(intent);
+                    }
+                });
+                break;
+            }
+            case 14:
+            {
+                mImageDisplay.setImageResource(R.drawable.ostrich);
+                mImageDisplay.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                        intent.putExtra("image_url",14);
+                        startActivity(intent);
+                    }
+                });
+                break;
+            }
+            case 15:
+            {
+                mImageDisplay.setImageResource(R.drawable.pig);
+                mImageDisplay.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                        intent.putExtra("image_url",15);
+                        startActivity(intent);
+                    }
+                });
+                break;
+            }
+            case 16:
+            {
+                mImageDisplay.setImageResource(R.drawable.quail);
+                mImageDisplay.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                        intent.putExtra("image_url",16);
+                        startActivity(intent);
+                    }
+                });
+                break;
+            }
+            case 17:
+            {
+                mImageDisplay.setImageResource(R.drawable.rat);
+                mImageDisplay.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                        intent.putExtra("image_url",17);
+                        startActivity(intent);
+                    }
+                });
+                break;
+            }
+            case 18:
+            {
+                mImageDisplay.setImageResource(R.drawable.sheep);
+                mImageDisplay.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                        intent.putExtra("image_url",18);
+                        startActivity(intent);
+                    }
+                });
+                break;
+            }
+            case 19:
+            {
+                mImageDisplay.setImageResource(R.drawable.tiger);
+                mImageDisplay.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                        intent.putExtra("image_url",19);
+                        startActivity(intent);
+                    }
+                });
+                break;
+            }
+            case 20:
+            {
+                mImageDisplay.setImageResource(R.drawable.urial);
+                mImageDisplay.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                        intent.putExtra("image_url",20);
+                        startActivity(intent);
+                    }
+                });
+                break;
+            }
+            case 21:
+            {
+                mImageDisplay.setImageResource(R.drawable.wolf);
+                mImageDisplay.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                        intent.putExtra("image_url",21);
+                        startActivity(intent);
+                    }
+                });
+                break;
+            }
+            case 22:
+            {
+                mImageDisplay.setImageResource(R.drawable.xerus);
+                mImageDisplay.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                        intent.putExtra("image_url",22);
+                        startActivity(intent);
+                    }
+                });
+                break;
+            }
+            case 23:
+            {
+                mImageDisplay.setImageResource(R.drawable.yak);
+                mImageDisplay.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                        intent.putExtra("image_url",23);
+                        startActivity(intent);
+                    }
+                });
+                break;
+            }
+            case 24:
+            {
+                mImageDisplay.setImageResource(R.drawable.zebra);
+                mImageDisplay.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(AnimalActivity.this, ImageShow.class);
+                        intent.putExtra("image_url",24);
                         startActivity(intent);
                     }
                 });
