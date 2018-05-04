@@ -3,6 +3,7 @@ package com.velsol.animallife;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 public class ImageShow extends AppCompatActivity
@@ -75,5 +76,13 @@ public class ImageShow extends AppCompatActivity
             default:
                 break;
         }
+        mImage.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                onBackPressed();
+            }
+        });
     }
 }
