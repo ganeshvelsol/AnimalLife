@@ -26,7 +26,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/ic_launcher_background"
+                    android:src="@drawable/animalcard"
                     android:scaleType="fitXY"/>
                 <TextView
                     android:gravity="center"
@@ -57,13 +57,13 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/ic_launcher_background"
+                    android:src="@drawable/fruits"
                     android:scaleType="fitXY"/>
                 <TextView
                     android:gravity="center"
                     android:layout_alignParentBottom="true"
                     android:padding="8dp"
-                    android:text="All Fruits"
+                    android:text="All Birds"
                     android:textColor="@android:color/white"
                     android:background="#a0000000"
                     android:layout_width="match_parent"

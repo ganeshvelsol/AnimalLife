@@ -12,18 +12,21 @@ import android.widget.Toast;
 public class AnimalActivity extends AppCompatActivity
 {
     ImageView left,right,mImageDisplay;
-    TextView description;
+    TextView description,animalNames;
     int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animal);
+        animalNames=(TextView)findViewById(R.id.animal_name);
         left=(ImageView)findViewById(R.id.left);
         right=(ImageView)findViewById(R.id.right);
         mImageDisplay=(ImageView)findViewById(R.id.image_show);
         description=(TextView)findViewById(R.id.description_label);
         mImageDisplay.setImageResource(R.drawable.alligator);
+        animalNames.setText("Alligator");
         description.setText("alligator text is started");
                left.setOnClickListener(new View.OnClickListener()
                {
@@ -51,6 +54,7 @@ public class AnimalActivity extends AppCompatActivity
         {
             Toast.makeText(this, "no images found", Toast.LENGTH_SHORT).show();
             mImageDisplay.setImageResource(R.drawable.alligator);
+            animalNames.setText("Alligator");
             left.setVisibility(View.GONE);
         }
         else
@@ -61,6 +65,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 1:
                 {
                     mImageDisplay.setImageResource(R.drawable.bear);
+                    animalNames.setText("Bear");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -76,6 +81,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 2:
                 {
                     mImageDisplay.setImageResource(R.drawable.crab);
+                    animalNames.setText("Crab");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -91,6 +97,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 3:
                 {
                     mImageDisplay.setImageResource(R.drawable.donkey);
+                    animalNames.setText("donkey");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -106,6 +113,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 4:
                 {
                     mImageDisplay.setImageResource(R.drawable.elephant);
+                    animalNames.setText("Elephant");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -121,6 +129,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 5:
                 {
                     mImageDisplay.setImageResource(R.drawable.flamingo);
+                    animalNames.setText("Flamingo");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -136,6 +145,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 6:
                 {
                     mImageDisplay.setImageResource(R.drawable.girafee);
+                    animalNames.setText("Girafee");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -151,6 +161,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 7:
                 {
                     mImageDisplay.setImageResource(R.drawable.hippopotamus);
+                    animalNames.setText("Hippopotamous");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -166,6 +177,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 8:
                 {
                     mImageDisplay.setImageResource(R.drawable.iguana);
+                    animalNames.setText("iguana");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -181,6 +193,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 9:
                 {
                     mImageDisplay.setImageResource(R.drawable.jaguar);
+                    animalNames.setText("Jaguar");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -196,6 +209,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 10:
                 {
                     mImageDisplay.setImageResource(R.drawable.kangaroo);
+                    animalNames.setText("Kangaroo");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -211,6 +225,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 11:
                 {
                     mImageDisplay.setImageResource(R.drawable.lion);
+                    animalNames.setText("Lion");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -226,6 +241,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 12:
                 {
                     mImageDisplay.setImageResource(R.drawable.macaw);
+                    animalNames.setText("Macaw");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -240,7 +256,8 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 13:
                 {
-                    mImageDisplay.setImageResource(R.drawable.newt);;
+                    mImageDisplay.setImageResource(R.drawable.newt);
+                    animalNames.setText("Newt");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -256,6 +273,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 14:
                 {
                     mImageDisplay.setImageResource(R.drawable.ostrich);
+                    animalNames.setText("Ostrich");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -271,6 +289,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 15:
                 {
                     mImageDisplay.setImageResource(R.drawable.pig);
+                    animalNames.setText("Pig");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -286,6 +305,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 16:
                 {
                     mImageDisplay.setImageResource(R.drawable.quail);
+                    animalNames.setText("Quail");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -301,6 +321,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 17:
                 {
                     mImageDisplay.setImageResource(R.drawable.rat);
+                    animalNames.setText("Rat");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -316,6 +337,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 18:
                 {
                     mImageDisplay.setImageResource(R.drawable.sheep);
+                    animalNames.setText("Sheep");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -331,6 +353,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 19:
                 {
                     mImageDisplay.setImageResource(R.drawable.tiger);
+                    animalNames.setText("Tiger");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -346,6 +369,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 20:
                 {
                     mImageDisplay.setImageResource(R.drawable.urial);
+                    animalNames.setText("Urial");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -361,6 +385,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 21:
                 {
                     mImageDisplay.setImageResource(R.drawable.wolf);
+                    animalNames.setText("Wolf");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -376,6 +401,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 22:
                 {
                     mImageDisplay.setImageResource(R.drawable.xerus);
+                    animalNames.setText("Xerus");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -391,6 +417,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 23:
                 {
                     mImageDisplay.setImageResource(R.drawable.yak);
+                    animalNames.setText("Yak");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -406,6 +433,7 @@ public class AnimalActivity extends AppCompatActivity
                 case 24:
                 {
                     mImageDisplay.setImageResource(R.drawable.zebra);
+                    animalNames.setText("Zebra");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
@@ -432,6 +460,7 @@ public class AnimalActivity extends AppCompatActivity
             case 1:
             {
                 mImageDisplay.setImageResource(R.drawable.bear);
+                animalNames.setText("Bear");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -447,6 +476,7 @@ public class AnimalActivity extends AppCompatActivity
             case 2:
             {
                 mImageDisplay.setImageResource(R.drawable.crab);
+                animalNames.setText("Crab");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -462,6 +492,7 @@ public class AnimalActivity extends AppCompatActivity
             case 3:
             {
                 mImageDisplay.setImageResource(R.drawable.donkey);
+                animalNames.setText("Donkey");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -477,6 +508,7 @@ public class AnimalActivity extends AppCompatActivity
             case 4:
             {
                 mImageDisplay.setImageResource(R.drawable.elephant);
+                animalNames.setText("Elephant");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -492,6 +524,7 @@ public class AnimalActivity extends AppCompatActivity
             case 5:
             {
                 mImageDisplay.setImageResource(R.drawable.flamingo);
+                animalNames.setText("Flamingo");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -507,6 +540,7 @@ public class AnimalActivity extends AppCompatActivity
             case 6:
             {
                 mImageDisplay.setImageResource(R.drawable.girafee);
+                animalNames.setText("Girafee");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -522,6 +556,7 @@ public class AnimalActivity extends AppCompatActivity
             case 7:
             {
                 mImageDisplay.setImageResource(R.drawable.hippopotamus);
+                animalNames.setText("Hippopotamus");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -537,6 +572,7 @@ public class AnimalActivity extends AppCompatActivity
             case 8:
             {
                 mImageDisplay.setImageResource(R.drawable.iguana);
+                animalNames.setText("Iguana");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -552,6 +588,7 @@ public class AnimalActivity extends AppCompatActivity
             case 9:
             {
                 mImageDisplay.setImageResource(R.drawable.jaguar);
+                animalNames.setText("Jaguar");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -567,6 +604,7 @@ public class AnimalActivity extends AppCompatActivity
             case 10:
             {
                 mImageDisplay.setImageResource(R.drawable.kangaroo);
+                animalNames.setText("Kangaroo");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -582,6 +620,7 @@ public class AnimalActivity extends AppCompatActivity
             case 11:
             {
                 mImageDisplay.setImageResource(R.drawable.lion);
+                animalNames.setText("Lion");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -597,6 +636,7 @@ public class AnimalActivity extends AppCompatActivity
             case 12:
             {
                 mImageDisplay.setImageResource(R.drawable.macaw);
+                animalNames.setText("Macaw");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -611,7 +651,8 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 13:
             {
-                mImageDisplay.setImageResource(R.drawable.newt);;
+                mImageDisplay.setImageResource(R.drawable.newt);
+                animalNames.setText("Newt");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -627,6 +668,7 @@ public class AnimalActivity extends AppCompatActivity
             case 14:
             {
                 mImageDisplay.setImageResource(R.drawable.ostrich);
+                animalNames.setText("Ostrich");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -642,6 +684,7 @@ public class AnimalActivity extends AppCompatActivity
             case 15:
             {
                 mImageDisplay.setImageResource(R.drawable.pig);
+                animalNames.setText("Pig");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -657,6 +700,7 @@ public class AnimalActivity extends AppCompatActivity
             case 16:
             {
                 mImageDisplay.setImageResource(R.drawable.quail);
+                animalNames.setText("Quail");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -672,6 +716,7 @@ public class AnimalActivity extends AppCompatActivity
             case 17:
             {
                 mImageDisplay.setImageResource(R.drawable.rat);
+                animalNames.setText("Rat");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -687,6 +732,7 @@ public class AnimalActivity extends AppCompatActivity
             case 18:
             {
                 mImageDisplay.setImageResource(R.drawable.sheep);
+                animalNames.setText("Sheep");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -702,6 +748,7 @@ public class AnimalActivity extends AppCompatActivity
             case 19:
             {
                 mImageDisplay.setImageResource(R.drawable.tiger);
+                animalNames.setText("Tiger");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -717,6 +764,7 @@ public class AnimalActivity extends AppCompatActivity
             case 20:
             {
                 mImageDisplay.setImageResource(R.drawable.urial);
+                animalNames.setText("Urial");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -732,6 +780,7 @@ public class AnimalActivity extends AppCompatActivity
             case 21:
             {
                 mImageDisplay.setImageResource(R.drawable.wolf);
+                animalNames.setText("Wolf");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -747,6 +796,7 @@ public class AnimalActivity extends AppCompatActivity
             case 22:
             {
                 mImageDisplay.setImageResource(R.drawable.xerus);
+                animalNames.setText("Xerus");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -762,6 +812,7 @@ public class AnimalActivity extends AppCompatActivity
             case 23:
             {
                 mImageDisplay.setImageResource(R.drawable.yak);
+                animalNames.setText("Yak");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
@@ -777,6 +828,7 @@ public class AnimalActivity extends AppCompatActivity
             case 24:
             {
                 mImageDisplay.setImageResource(R.drawable.zebra);
+                animalNames.setText("Zebra");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
                 {
                     @Override

@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mcardAnimals=(CardView)findViewById(R.id.all_animals);
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view)
             {
                 //call fruits related activity
+                startActivity(new Intent(MainActivity.this,BirdsActivity.class));
 
             }
         });

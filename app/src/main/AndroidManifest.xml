@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".AnimalActivity" />
-        <activity android:name=".ImageShow"></activity>
+        <activity android:name=".ImageShow" />
+        <activity android:name=".BirdsActivity" />
+        <activity android:name=".FruitsZoomAct"></activity>
     </application>
 
 </manifest>

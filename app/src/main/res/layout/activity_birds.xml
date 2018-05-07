@@ -2,27 +2,27 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <TextView
-        android:id="@+id/animal_name"
+        android:id="@+id/birds_name"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/left"
+            android:id="@+id/left_bird"
             android:src="@drawable/left"
             android:layout_width="30dp"
             android:layout_height="25dp"
-            android:layout_alignBottom="@+id/image_show"
-            android:layout_toLeftOf="@+id/image_show"
+            android:layout_alignBottom="@+id/image_show_birds"
+            android:layout_toLeftOf="@+id/image_show_birds"
             android:layout_marginRight="20dp"
-            android:layout_toStartOf="@+id/image_show" />
+            android:layout_toStartOf="@+id/image_show_birds" />
         <ImageView
-            android:id="@+id/image_show"
+            android:id="@+id/image_show_birds"
             android:layout_width="210dp"
             android:layout_height="200dp"
             android:layout_alignParentTop="true"
@@ -31,43 +31,36 @@
             android:src="@drawable/ic_launcher_background" />
 
         <ImageView
-            android:id="@+id/right"
+            android:id="@+id/right_bird"
             android:layout_width="30dp"
             android:layout_height="25dp"
-            android:layout_alignBottom="@+id/image_show"
-            android:layout_toEndOf="@+id/image_show"
-            android:layout_toRightOf="@+id/image_show"
             android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/image_show_birds"
+            android:layout_toEndOf="@+id/image_show_birds"
+            android:layout_toRightOf="@+id/image_show_birds"
             android:src="@drawable/right" />
-
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <LinearLayout
+            android:layout_marginTop="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/left"
-            android:layout_marginTop="14dp"
             android:orientation="vertical">
-
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="Description :"
-                android:textSize="15dp" />
-
-            <TextView
-                android:id="@+id/description_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/description_label_bird"
                 android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="20dp"
                 android:text="22202101"
-                android:textSize="18dp" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
         </LinearLayout>
-    </RelativeLayout>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-</ScrollView>
+    </ScrollView>
 </LinearLayout>

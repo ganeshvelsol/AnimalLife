@@ -10,7 +10,9 @@ public class ImageShow extends AppCompatActivity
 {
     ImageView mImage;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_show);
         mImage=(ImageView)findViewById(R.id.image_full);
