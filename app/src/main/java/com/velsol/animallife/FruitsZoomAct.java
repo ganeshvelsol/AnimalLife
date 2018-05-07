@@ -74,6 +74,81 @@ public class FruitsZoomAct extends AppCompatActivity
                 frootsShow.setImageResource(R.drawable.kiwifruit);
                 break;
             }
+            case 11:
+            {
+                frootsShow.setImageResource(R.drawable.lemon);
+                break;
+            }
+            case 12:
+            {
+                frootsShow.setImageResource(R.drawable.mango);
+                break;
+            }
+            case 13:
+            {
+                frootsShow.setImageResource(R.drawable.nectarine);
+                break;
+            }
+            case 14:
+            {
+                frootsShow.setImageResource(R.drawable.olive);
+                break;
+            }
+            case 15:
+            {
+                frootsShow.setImageResource(R.drawable.papaya);
+                break;
+            }
+            case 16:
+            {
+                frootsShow.setImageResource(R.drawable.quince);
+                break;
+            }
+            case 17:
+            {
+                frootsShow.setImageResource(R.drawable.raspberry);
+                break;
+            }
+            case 18:
+            {
+                frootsShow.setImageResource(R.drawable.sweetpotato);
+                break;
+            }
+            case 19:
+            {
+                frootsShow.setImageResource(R.drawable.tomato);
+                break;
+            }
+            case 20:
+            {
+                frootsShow.setImageResource(R.drawable.uglyfroot);
+                break;
+            }
+            case 21:
+            {
+                frootsShow.setImageResource(R.drawable.valencia);
+                break;
+            }
+            case 22:
+            {
+                frootsShow.setImageResource(R.drawable.walnut);
+                break;
+            }
+            case 23:
+            {
+                frootsShow.setImageResource(R.drawable.xigua);
+                break;
+            }
+            case 24:
+            {
+                frootsShow.setImageResource(R.drawable.yambean);
+                break;
+            }
+            case 25:
+            {
+                frootsShow.setImageResource(R.drawable.zucchini);
+                break;
+            }
             default:
                 break;
         }

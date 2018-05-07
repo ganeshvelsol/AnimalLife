@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity
             {
                 //call fruits related activity
                 startActivity(new Intent(MainActivity.this,BirdsActivity.class));
-
             }
         });
     }

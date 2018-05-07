@@ -214,6 +214,231 @@ public class BirdsActivity extends AppCompatActivity
                     labelBirdsName.setText("kiwifruit");
                     break;
                 }
+                case 11:
+                {
+                    labelBirds.setImageResource(R.drawable.lemon);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",11);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Lemon");
+                    break;
+                }
+                case 12:
+                {
+                    labelBirds.setImageResource(R.drawable.mango);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",12);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Mango");
+                    break;
+                }
+                case 13:
+                {
+                    labelBirds.setImageResource(R.drawable.nectarine);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",13);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Nectarine");
+                    break;
+                }
+                case 14:
+                {
+                    labelBirds.setImageResource(R.drawable.olive);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",14);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Olive");
+                    break;
+                }
+                case 15:
+                {
+                    labelBirds.setImageResource(R.drawable.papaya);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",15);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Papaya");
+                    break;
+                }
+                case 16:
+                {
+                    labelBirds.setImageResource(R.drawable.quince);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",16);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Quince");
+                    break;
+                }
+                case 17:
+                {
+                    labelBirds.setImageResource(R.drawable.raspberry);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",17);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Raspberry");
+                    break;
+                }
+                case 18:
+                {
+                    labelBirds.setImageResource(R.drawable.sweetpotato);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",18);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Sweet Potato");
+                    break;
+                }
+                case 19:
+                {
+                    labelBirds.setImageResource(R.drawable.tomato);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",19);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Tomato");
+                    break;
+                }
+                case 20:
+                {
+                    labelBirds.setImageResource(R.drawable.uglyfroot);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",20);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("UglyFruit");
+                    break;
+                }
+                case 21:
+                {
+                    labelBirds.setImageResource(R.drawable.valencia);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",21);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Valencia");
+                    break;
+                }
+                case 22:
+                {
+                    labelBirds.setImageResource(R.drawable.walnut);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",22);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Walnut");
+                    break;
+                }
+                case 23:
+                {
+                    labelBirds.setImageResource(R.drawable.xigua);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",23);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Xigua");
+                    break;
+                }
+                case 24:
+                {
+                    labelBirds.setImageResource(R.drawable.yambean);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",24);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Yambean");
+                    break;
+                }
+                case 25:
+                {
+                    labelBirds.setImageResource(R.drawable.zucchini);
+                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view)
+                        {
+                            Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                            intent.putExtra("image_url",25);
+                            startActivity(intent);
+                        }
+                    });
+                    labelBirdsName.setText("Zucchini");
+                    break;
+                }
                 default:
                     break;
             }
@@ -367,6 +592,231 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("kiwifruit");
+                break;
+            }
+            case 11:
+            {
+                labelBirds.setImageResource(R.drawable.lemon);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",11);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Lemon");
+                break;
+            }
+            case 12:
+            {
+                labelBirds.setImageResource(R.drawable.mango);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",12);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Mango");
+                break;
+            }
+            case 13:
+            {
+                labelBirds.setImageResource(R.drawable.nectarine);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",13);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Nectarine");
+                break;
+            }
+            case 14:
+            {
+                labelBirds.setImageResource(R.drawable.olive);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",14);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Olive");
+                break;
+            }
+            case 15:
+            {
+                labelBirds.setImageResource(R.drawable.papaya);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",15);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Papaya");
+                break;
+            }
+            case 16:
+            {
+                labelBirds.setImageResource(R.drawable.quince);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",16);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Quince");
+                break;
+            }
+            case 17:
+            {
+                labelBirds.setImageResource(R.drawable.raspberry);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",17);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Raspberry");
+                break;
+            }
+            case 18:
+            {
+                labelBirds.setImageResource(R.drawable.sweetpotato);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",18);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Sweet Potato");
+                break;
+            }
+            case 19:
+            {
+                labelBirds.setImageResource(R.drawable.tomato);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",19);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Tomato");
+                break;
+            }
+            case 20:
+            {
+                labelBirds.setImageResource(R.drawable.uglyfroot);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",20);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("UglyFruit");
+                break;
+            }
+            case 21:
+            {
+                labelBirds.setImageResource(R.drawable.valencia);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",21);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Valencia");
+                break;
+            }
+            case 22:
+            {
+                labelBirds.setImageResource(R.drawable.walnut);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",22);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Walnut");
+                break;
+            }
+            case 23:
+            {
+                labelBirds.setImageResource(R.drawable.xigua);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",23);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Xigua");
+                break;
+            }
+            case 24:
+            {
+                labelBirds.setImageResource(R.drawable.yambean);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",24);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Yambean");
+                break;
+            }
+            case 25:
+            {
+                labelBirds.setImageResource(R.drawable.zucchini);
+                labelBirds.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                        intent.putExtra("image_url",25);
+                        startActivity(intent);
+                    }
+                });
+                labelBirdsName.setText("Zucchini");
                 break;
             }
             default:
