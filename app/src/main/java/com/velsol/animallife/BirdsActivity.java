@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -20,15 +21,25 @@ public class BirdsActivity extends AppCompatActivity
     int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_birds);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         leftBirds=(ImageView)findViewById(R.id.left_bird);
         labelBirds=(ImageView)findViewById(R.id.image_show_birds);
         rightBirds=(ImageView)findViewById(R.id.right_bird);
         labelButton=(TextView)findViewById(R.id.description_label_bird);
         labelBirdsName=(TextView)findViewById(R.id.birds_name);
         labelBirds.setImageResource(R.drawable.apple);
+        labelBirds.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
+                intent.putExtra("image_url",99);
+                startActivity(intent);
+            }
+        });
         labelBirdsName.setText("Apple");
         Spannable word = new SpannableString("As one of the most cultivated and consumed fruits in the world, apples are continuously being praised as a \n miracle food\n");
         word.setSpan(new ForegroundColorSpan(Color.BLUE), 0, word.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -894,6 +905,19 @@ public class BirdsActivity extends AppCompatActivity
             }
             default:
                 break;
+        }
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                startActivity(new Intent(this,MainActivity.class));
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 }

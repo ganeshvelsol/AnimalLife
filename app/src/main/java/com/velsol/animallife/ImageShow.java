@@ -20,6 +20,16 @@ public class ImageShow extends AppCompatActivity
         int mm=b.getInt("image_url");
         switch (mm)
         {
+            case 88:
+            {
+                mImage.setImageResource(R.drawable.alligator);
+                break;
+            }
+            case 0:
+            {
+                mImage.setImageResource(R.drawable.alligator);
+                break;
+            }
             case 1:
             {
                 mImage.setImageResource(R.drawable.bear);

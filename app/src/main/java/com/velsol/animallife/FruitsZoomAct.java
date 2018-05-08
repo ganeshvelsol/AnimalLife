@@ -19,6 +19,11 @@ public class FruitsZoomAct extends AppCompatActivity
         int mm=b.getInt("image_url");
         switch (mm)
         {
+            case 99:
+            {
+                frootsShow.setImageResource(R.drawable.apple);
+                break;
+            }
             case 0:
             {
                 frootsShow.setImageResource(R.drawable.apple);
