@@ -485,7 +485,7 @@ public class AnimalActivity extends AppCompatActivity
                             startActivity(intent);
                         }
                     });
-                    description.setText("");
+                    description.setText("Human disruption of habitats may also limit the lifespan, which averages 2 years in the wild.");
                     break;
                 }
                 case 23:
@@ -926,7 +926,7 @@ public class AnimalActivity extends AppCompatActivity
                         startActivity(intent);
                     }
                 });
-                description.setText("");
+                description.setText("Human disruption of habitats may also limit the lifespan, which averages 2 years in the wild.");
                 break;
             }
             case 23:

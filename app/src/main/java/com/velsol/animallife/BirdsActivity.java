@@ -290,7 +290,8 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Lemon");
-                    labelButton.setText("");
+                    labelButton.setText("1. It promotes hydration.\n 2. It’s a good source of vitamin C \n 3. It improves your skin quality" +
+                            "\n 4. It supports weight loss \n 5. It aids digestion. \n 6. It freshens breath.");
                     break;
                 }
                 case 12:
@@ -306,6 +307,8 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Mango");
+                    labelButton.setText(" 1.  Prevents Cancer \n 2.  Lowers Cholesterol \n 3. Clears the Skin \n 4.  Improves Digestion \n 5. Remedy for Heat Stroke \n" +
+                            "6. Boosts Immune System");
                     break;
                 }
                 case 13:
@@ -321,6 +324,7 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Nectarine");
+                    labelButton.setText("1. Antioxidant Defense \n 2. Weight Loss \n 3. Improve vision \n 4. Improve Cardiac Health");
                     break;
                 }
                 case 14:
@@ -336,6 +340,7 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Olive");
+                    labelButton.setText("Olives eliminate excess cholesterol in the blood \n Olives control blood pressure. \n Olives are a source of dietary fibre as an alternative to fruits and vegetables. ");
                     break;
                 }
                 case 15:
@@ -351,6 +356,8 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Papaya");
+                    labelButton.setText(" 1. Papaya helps in digestion \n 2. It promotes weight loss \n 3. It regulates menstruation  \n" +
+                            "4. It has anticancer properties \n 5. It helps in skin care.");
                     break;
                 }
                 case 16:
@@ -366,6 +373,7 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Quince");
+                    labelButton.setText(" 1. Promotes Weight Loss 2. Skin Care \n 3. Regulates Blood Pressure \n 4. Allergic Reactions.");
                     break;
                 }
                 case 17:
@@ -381,6 +389,7 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Raspberry");
+                    labelButton.setText(" 1. Reduce Wrinkles \n 2. Prevent Macular Degeneration. \n 3. Prevent Infections & Cancer. \n 4. Promote Feminine Health");
                     break;
                 }
                 case 18:
@@ -396,6 +405,7 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Sweet Potato");
+                    labelButton.setText(" 1. Sweet potatoes may help maintain a healthy blood pressure and protect against cancer. \n 2. The high fiber content of sweet potatoes helps prevent constipation. \n 3. One medium, baked sweet potato with skin contains just 103 calories.");
                     break;
                 }
                 case 19:
@@ -411,6 +421,7 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Tomato");
+                    labelButton.setText(" 1. Antioxidant Agent \n 2. Counter the Effect of Smoking Cigarette \n 3. Lower Hypertension \n 4. Prevent Urinary Tract Infections");
                     break;
                 }
                 case 20:
@@ -425,7 +436,8 @@ public class BirdsActivity extends AppCompatActivity
                             startActivity(intent);
                         }
                     });
-                    labelBirdsName.setText("UglyFruit");
+                    labelBirdsName.setText("Ugli Fruit");
+                    labelButton.setText(" 1. Being rich in Vitamin B, this fruit also promotes good oral health. \n 2. Ugli fruit also protects against kidney stone formation. \n 3. One serving of this amazing fruit contains 2 grams of dietary fiber. ");
                     break;
                 }
                 case 21:
@@ -441,6 +453,7 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Valencia");
+                    labelButton.setText(" 1. Lowers Blood Pressure. ...\n" + "2. Digestion. ...\n" + "3. Fights Against Cancer. ...\n" + "4. Cardiovascular Health.");
                     break;
                 }
                 case 22:
@@ -456,6 +469,9 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Walnut");
+                    labelButton.setText(" 1. Cancer-Fighting Properties. Walnuts may help reduce not only the risk of prostate cancer, but breast cancer as well. ...\n" +
+                            "2. Heart Health.\n" + "3. Rare and Powerful Antioxidants. ...\n" +"3. Weight Control. ...\n" + "4. Improved Reproductive Health in Men. ...\n" +
+                            "5. Brain Health");
                     break;
                 }
                 case 23:
@@ -471,12 +487,14 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Xigua");
+                    labelButton.setText(" ");
                     break;
                 }
                 case 24:
                 {
                     labelBirds.setImageResource(R.drawable.yambean);
-                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                    labelBirds.setOnClickListener(new View.OnClickListener()
+                    {
                         @Override
                         public void onClick(View view)
                         {
@@ -486,12 +504,14 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Yambean");
+                    labelButton.setText(" ");
                     break;
                 }
                 case 25:
                 {
                     labelBirds.setImageResource(R.drawable.zucchini);
-                    labelBirds.setOnClickListener(new View.OnClickListener() {
+                    labelBirds.setOnClickListener(new View.OnClickListener()
+                    {
                         @Override
                         public void onClick(View view)
                         {
@@ -501,6 +521,7 @@ public class BirdsActivity extends AppCompatActivity
                         }
                     });
                     labelBirdsName.setText("Zucchini");
+                    labelButton.setText(" ");
                     break;
                 }
                 default:
@@ -548,9 +569,11 @@ public class BirdsActivity extends AppCompatActivity
             case 3:
             {
                 labelBirds.setImageResource(R.drawable.dates);
-                labelBirds.setOnClickListener(new View.OnClickListener() {
+                labelBirds.setOnClickListener(new View.OnClickListener()
+                {
                     @Override
-                    public void onClick(View view) {
+                    public void onClick(View view)
+                    {
                         Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
                         intent.putExtra("image_url",3);
                         startActivity(intent);
@@ -563,9 +586,11 @@ public class BirdsActivity extends AppCompatActivity
             case 4:
             {
                 labelBirds.setImageResource(R.drawable.eggplant);
-                labelBirds.setOnClickListener(new View.OnClickListener() {
+                labelBirds.setOnClickListener(new View.OnClickListener()
+                {
                     @Override
-                    public void onClick(View view) {
+                    public void onClick(View view)
+                    {
                         Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
                         intent.putExtra("image_url",4);
                         startActivity(intent);
@@ -579,9 +604,11 @@ public class BirdsActivity extends AppCompatActivity
             case 5:
             {
                 labelBirds.setImageResource(R.drawable.fig);
-                labelBirds.setOnClickListener(new View.OnClickListener() {
+                labelBirds.setOnClickListener(new View.OnClickListener()
+                {
                     @Override
-                    public void onClick(View view) {
+                    public void onClick(View view)
+                    {
                         Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
                         intent.putExtra("image_url",5);
                         startActivity(intent);
@@ -597,9 +624,11 @@ public class BirdsActivity extends AppCompatActivity
             case 6:
             {
                 labelBirds.setImageResource(R.drawable.grapes);
-                labelBirds.setOnClickListener(new View.OnClickListener() {
+                labelBirds.setOnClickListener(new View.OnClickListener()
+                {
                     @Override
-                    public void onClick(View view) {
+                    public void onClick(View view)
+                    {
                         Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
                         intent.putExtra("image_url",6);
                         startActivity(intent);
@@ -632,15 +661,16 @@ public class BirdsActivity extends AppCompatActivity
             case 8:
             {
                 labelBirds.setImageResource(R.drawable.indianprune);
-                labelBirds.setOnClickListener(new View.OnClickListener() {
+                labelBirds.setOnClickListener(new View.OnClickListener()
+                {
                     @Override
-                    public void onClick(View view) {
+                    public void onClick(View view)
+                    {
                         Intent intent = new Intent(BirdsActivity.this, FruitsZoomAct.class);
                         intent.putExtra("image_url",8);
                         startActivity(intent);
                     }
                 });
-
                 labelBirdsName.setText("indianprune");
                 labelButton.setText("he fruit has been used to treat haemoptysis, vaginal and menstrual problems, rheumatoid problems,\n and has been issued as a purgative and demulcent. Green fruits have been used as a diuretic");
                 break;
@@ -680,7 +710,8 @@ public class BirdsActivity extends AppCompatActivity
             case 11:
             {
                 labelBirds.setImageResource(R.drawable.lemon);
-                labelBirds.setOnClickListener(new View.OnClickListener() {
+                labelBirds.setOnClickListener(new View.OnClickListener()
+                {
                     @Override
                     public void onClick(View view)
                     {
@@ -690,7 +721,8 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Lemon");
-                labelButton.setText("");
+                labelButton.setText("1. It promotes hydration.\n 2. It’s a good source of vitamin C \n 3. It improves your skin quality" +
+                        "\n 4. It supports weight loss \n 5. It aids digestion. \n 6. It freshens breath.");
                 break;
             }
             case 12:
@@ -706,6 +738,8 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Mango");
+                labelButton.setText(" 1.  Prevents Cancer \n 2.  Lowers Cholesterol \n 3. Clears the Skin \n 4.  Improves Digestion \n 5. Remedy for Heat Stroke \n" +
+                        "6. Boosts Immune System");
                 break;
             }
             case 13:
@@ -721,6 +755,7 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Nectarine");
+                labelButton.setText("1. Antioxidant Defense \n 2. Weight Loss \n 3. Improve vision \n 4. Improve Cardiac Health");
                 break;
             }
             case 14:
@@ -736,6 +771,7 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Olive");
+                labelButton.setText("Olives eliminate excess cholesterol in the blood \n Olives control blood pressure. \n Olives are a source of dietary fibre as an alternative to fruits and vegetables. ");
                 break;
             }
             case 15:
@@ -751,6 +787,8 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Papaya");
+                labelButton.setText(" 1. Papaya helps in digestion \n 2. It promotes weight loss \n 3. It regulates menstruation  \n" +
+                        "4. It has anticancer properties \n 5. It helps in skin care.");
                 break;
             }
             case 16:
@@ -766,6 +804,7 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Quince");
+                labelButton.setText(" 1. Promotes Weight Loss 2. Skin Care \n 3. Regulates Blood Pressure \n 4. Allergic Reactions.");
                 break;
             }
             case 17:
@@ -781,6 +820,7 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Raspberry");
+                labelButton.setText(" 1. Reduce Wrinkles \n 2. Prevent Macular Degeneration. \n 3. Prevent Infections & Cancer. \n 4. Promote Feminine Health");
                 break;
             }
             case 18:
@@ -796,6 +836,7 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Sweet Potato");
+                labelButton.setText(" 1. Sweet potatoes may help maintain a healthy blood pressure and protect against cancer. \n 2. The high fiber content of sweet potatoes helps prevent constipation. \n 3. One medium, baked sweet potato with skin contains just 103 calories.");
                 break;
             }
             case 19:
@@ -811,6 +852,7 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Tomato");
+                labelButton.setText(" 1. Antioxidant Agent \n 2. Counter the Effect of Smoking Cigarette \n 3. Lower Hypertension \n 4. Prevent Urinary Tract Infections");
                 break;
             }
             case 20:
@@ -825,7 +867,8 @@ public class BirdsActivity extends AppCompatActivity
                         startActivity(intent);
                     }
                 });
-                labelBirdsName.setText("UglyFruit");
+                labelBirdsName.setText("Ugli Fruit");
+                labelButton.setText(" 1. Being rich in Vitamin B, this fruit also promotes good oral health. \n 2. Ugli fruit also protects against kidney stone formation. \n 3. One serving of this amazing fruit contains 2 grams of dietary fiber. ");
                 break;
             }
             case 21:
@@ -841,6 +884,7 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Valencia");
+                labelButton.setText(" 1. Lowers Blood Pressure. ...\n" + "2. Digestion. ...\n" + "3. Fights Against Cancer. ...\n" + "4. Cardiovascular Health.");
                 break;
             }
             case 22:
@@ -856,6 +900,9 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Walnut");
+                labelButton.setText(" 1. Cancer-Fighting Properties. Walnuts may help reduce not only the risk of prostate cancer, but breast cancer as well. ...\n" +
+                        "2. Heart Health.\n" + "3. Rare and Powerful Antioxidants. ...\n" +"3. Weight Control. ...\n" + "4. Improved Reproductive Health in Men. ...\n" +
+                        "5. Brain Health");
                 break;
             }
             case 23:
@@ -871,6 +918,7 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Xigua");
+                labelButton.setText(" ");
                 break;
             }
             case 24:
@@ -886,6 +934,7 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Yambean");
+                labelButton.setText(" ");
                 break;
             }
             case 25:
@@ -901,6 +950,7 @@ public class BirdsActivity extends AppCompatActivity
                     }
                 });
                 labelBirdsName.setText("Zucchini");
+                labelButton.setText(" ");
                 break;
             }
             default:

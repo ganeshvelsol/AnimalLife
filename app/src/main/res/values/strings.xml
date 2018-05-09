@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AnimalLife</string>
+    <string name="all_animals">All Animals</string>
+    <string name="all_fruits">All Fruits</string>
 </resources>
