@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
+import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,7 +18,7 @@ import android.widget.Toast;
 public class AnimalActivity extends AppCompatActivity
 {
     ImageView left,right,mImageDisplay;
-    TextView description,animalNames;
+    TextView description,animalNames,AlphaName;
     int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,11 +27,13 @@ public class AnimalActivity extends AppCompatActivity
         setContentView(R.layout.activity_animal);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         animalNames=(TextView)findViewById(R.id.animal_name);
+        AlphaName=(TextView)findViewById(R.id.text_name);
         left=(ImageView)findViewById(R.id.left);
         right=(ImageView)findViewById(R.id.right);
         mImageDisplay=(ImageView)findViewById(R.id.image_show);
         description=(TextView)findViewById(R.id.description_label);
         mImageDisplay.setImageResource(R.drawable.alligator);
+        AlphaName.setText("A");
         mImageDisplay.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -70,6 +73,7 @@ public class AnimalActivity extends AppCompatActivity
         count--;
         if (count<0)
         {
+            AlphaName.setText("A");
             mImageDisplay.setImageResource(R.drawable.alligator);
             mImageDisplay.setOnClickListener(new View.OnClickListener()
             {
@@ -95,6 +99,7 @@ public class AnimalActivity extends AppCompatActivity
             {
                 case 1:
                 {
+                    AlphaName.setText("B");
                     mImageDisplay.setImageResource(R.drawable.bear);
                     animalNames.setText("Bear");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -115,6 +120,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 2:
                 {
+                    AlphaName.setText("C");
                     mImageDisplay.setImageResource(R.drawable.crab);
                     animalNames.setText("Crab");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -134,6 +140,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 3:
                 {
+                    AlphaName.setText("D");
                     mImageDisplay.setImageResource(R.drawable.donkey);
                     animalNames.setText("donkey");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -154,6 +161,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 4:
                 {
+                    AlphaName.setText("E");
                     mImageDisplay.setImageResource(R.drawable.elephant);
                     animalNames.setText("Elephant");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -173,6 +181,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 5:
                 {
+                    AlphaName.setText("F");
                     mImageDisplay.setImageResource(R.drawable.flamingo);
                     animalNames.setText("Flamingo");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -191,6 +200,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 6:
                 {
+                    AlphaName.setText("G");
                     mImageDisplay.setImageResource(R.drawable.girafee);
                     animalNames.setText("Girafee");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -208,6 +218,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 7:
                 {
+                    AlphaName.setText("H");
                     mImageDisplay.setImageResource(R.drawable.hippopotamus);
                     animalNames.setText("Hippopotamous");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -229,6 +240,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 8:
                 {
+                    AlphaName.setText("I");
                     mImageDisplay.setImageResource(R.drawable.iguana);
                     animalNames.setText("iguana");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -248,6 +260,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 9:
                 {
+                    AlphaName.setText("J");
                     mImageDisplay.setImageResource(R.drawable.jaguar);
                     animalNames.setText("Jaguar");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -265,6 +278,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 10:
                 {
+                    AlphaName.setText("K");
                     mImageDisplay.setImageResource(R.drawable.kangaroo);
                     animalNames.setText("Kangaroo");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -284,6 +298,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 11:
                 {
+                    AlphaName.setText("L");
                     mImageDisplay.setImageResource(R.drawable.lion);
                     animalNames.setText("Lion");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -301,6 +316,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 12:
                 {
+                    AlphaName.setText("M");
                     mImageDisplay.setImageResource(R.drawable.macaw);
                     animalNames.setText("Macaw");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -318,6 +334,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 13:
                 {
+                    AlphaName.setText("N");
                     mImageDisplay.setImageResource(R.drawable.newt);
                     animalNames.setText("Newt");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -335,6 +352,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 14:
                 {
+                    AlphaName.setText("O");
                     mImageDisplay.setImageResource(R.drawable.ostrich);
                     animalNames.setText("Ostrich");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -352,6 +370,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 15:
                 {
+                    AlphaName.setText("P");
                     mImageDisplay.setImageResource(R.drawable.pig);
                     animalNames.setText("Pig");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -369,6 +388,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 16:
                 {
+                    AlphaName.setText("Q");
                     mImageDisplay.setImageResource(R.drawable.quail);
                     animalNames.setText("Quail");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -386,6 +406,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 17:
                 {
+                    AlphaName.setText("R");
                     mImageDisplay.setImageResource(R.drawable.rat);
                     animalNames.setText("Rat");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -404,6 +425,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 18:
                 {
+                    AlphaName.setText("S");
                     mImageDisplay.setImageResource(R.drawable.sheep);
                     animalNames.setText("Sheep");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -421,6 +443,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 19:
                 {
+                    AlphaName.setText("T");
                     mImageDisplay.setImageResource(R.drawable.tiger);
                     animalNames.setText("Tiger");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -439,6 +462,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 20:
                 {
+                    AlphaName.setText("U");
                     mImageDisplay.setImageResource(R.drawable.urial);
                     animalNames.setText("Urial");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -456,6 +480,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 21:
                 {
+                    AlphaName.setText("W");
                     mImageDisplay.setImageResource(R.drawable.wolf);
                     animalNames.setText("Wolf");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -473,6 +498,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 22:
                 {
+                    AlphaName.setText("X");
                     mImageDisplay.setImageResource(R.drawable.xerus);
                     animalNames.setText("Xerus");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -490,6 +516,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 23:
                 {
+                    AlphaName.setText("Y");
                     mImageDisplay.setImageResource(R.drawable.yak);
                     animalNames.setText("Yak");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -507,6 +534,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 case 24:
                 {
+                    AlphaName.setText("Z");
                     mImageDisplay.setImageResource(R.drawable.zebra);
                     animalNames.setText("Zebra");
                     mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -524,6 +552,7 @@ public class AnimalActivity extends AppCompatActivity
                 }
                 default:
                     Toast.makeText(this, "completed", Toast.LENGTH_SHORT).show();
+
             }
         }
     }
@@ -535,6 +564,7 @@ public class AnimalActivity extends AppCompatActivity
         {
             case 1:
             {
+                AlphaName.setText("B");
                 mImageDisplay.setImageResource(R.drawable.bear);
                 animalNames.setText("Bear");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -555,6 +585,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 2:
             {
+                AlphaName.setText("C");
                 mImageDisplay.setImageResource(R.drawable.crab);
                 animalNames.setText("Crab");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -574,6 +605,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 3:
             {
+                AlphaName.setText("D");
                 mImageDisplay.setImageResource(R.drawable.donkey);
                 animalNames.setText("donkey");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -595,6 +627,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 4:
             {
+                AlphaName.setText("E");
                 mImageDisplay.setImageResource(R.drawable.elephant);
                 animalNames.setText("Elephant");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -614,6 +647,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 5:
             {
+                AlphaName.setText("F");
                 mImageDisplay.setImageResource(R.drawable.flamingo);
                 animalNames.setText("Flamingo");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -632,6 +666,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 6:
             {
+                AlphaName.setText("G");
                 mImageDisplay.setImageResource(R.drawable.girafee);
                 animalNames.setText("Girafee");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -649,6 +684,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 7:
             {
+                AlphaName.setText("H");
                 mImageDisplay.setImageResource(R.drawable.hippopotamus);
                 animalNames.setText("Hippopotamous");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -670,6 +706,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 8:
             {
+                AlphaName.setText("I");
                 mImageDisplay.setImageResource(R.drawable.iguana);
                 animalNames.setText("iguana");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -689,6 +726,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 9:
             {
+                AlphaName.setText("J");
                 mImageDisplay.setImageResource(R.drawable.jaguar);
                 animalNames.setText("Jaguar");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -706,6 +744,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 10:
             {
+                AlphaName.setText("K");
                 mImageDisplay.setImageResource(R.drawable.kangaroo);
                 animalNames.setText("Kangaroo");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -725,6 +764,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 11:
             {
+                AlphaName.setText("L");
                 mImageDisplay.setImageResource(R.drawable.lion);
                 animalNames.setText("Lion");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -742,6 +782,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 12:
             {
+                AlphaName.setText("M");
                 mImageDisplay.setImageResource(R.drawable.macaw);
                 animalNames.setText("Macaw");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -759,6 +800,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 13:
             {
+                AlphaName.setText("N");
                 mImageDisplay.setImageResource(R.drawable.newt);
                 animalNames.setText("Newt");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -776,6 +818,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 14:
             {
+                AlphaName.setText("O");
                 mImageDisplay.setImageResource(R.drawable.ostrich);
                 animalNames.setText("Ostrich");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -793,6 +836,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 15:
             {
+                AlphaName.setText("P");
                 mImageDisplay.setImageResource(R.drawable.pig);
                 animalNames.setText("Pig");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -810,6 +854,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 16:
             {
+                AlphaName.setText("Q");
                 mImageDisplay.setImageResource(R.drawable.quail);
                 animalNames.setText("Quail");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -827,6 +872,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 17:
             {
+                AlphaName.setText("R");
                 mImageDisplay.setImageResource(R.drawable.rat);
                 animalNames.setText("Rat");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -845,6 +891,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 18:
             {
+                AlphaName.setText("S");
                 mImageDisplay.setImageResource(R.drawable.sheep);
                 animalNames.setText("Sheep");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -862,6 +909,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 19:
             {
+                AlphaName.setText("T");
                 mImageDisplay.setImageResource(R.drawable.tiger);
                 animalNames.setText("Tiger");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -880,6 +928,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 20:
             {
+                AlphaName.setText("U");
                 mImageDisplay.setImageResource(R.drawable.urial);
                 animalNames.setText("Urial");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -897,6 +946,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 21:
             {
+                AlphaName.setText("W");
                 mImageDisplay.setImageResource(R.drawable.wolf);
                 animalNames.setText("Wolf");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -914,6 +964,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 22:
             {
+                AlphaName.setText("X");
                 mImageDisplay.setImageResource(R.drawable.xerus);
                 animalNames.setText("Xerus");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -931,6 +982,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 23:
             {
+                AlphaName.setText("Y");
                 mImageDisplay.setImageResource(R.drawable.yak);
                 animalNames.setText("Yak");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()
@@ -948,6 +1000,7 @@ public class AnimalActivity extends AppCompatActivity
             }
             case 24:
             {
+                AlphaName.setText("Z");
                 mImageDisplay.setImageResource(R.drawable.zebra);
                 animalNames.setText("Zebra");
                 mImageDisplay.setOnClickListener(new View.OnClickListener()

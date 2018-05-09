@@ -7,22 +7,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="7dp"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:weightSum="2">
         <TextView
+            android:id="@+id/text_name"
             android:gravity="center"
             android:textColor="#000080"
             android:textSize="18dp"
-            android:text="Name :"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/animal_name"
-            android:gravity="left"
+            android:gravity="center"
+            android:drawableLeft="@drawable/rightshow"
             android:textColor="#000080"
             android:textSize="18dp"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="25dp"
             android:layout_weight="1"/>
     </LinearLayout>
 
