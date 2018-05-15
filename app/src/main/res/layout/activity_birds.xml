@@ -21,10 +21,11 @@
             android:id="@+id/birds_name"
             android:gravity="left"
             android:textColor="#000080"
-            android:textSize="18dp"
+            android:textSize="15dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
+
     </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -65,14 +66,26 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:orientation="vertical">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="Benefits :"
             android:textColor="#52be83"
-            android:textSize="18dp" />
-
+            android:textSize="18dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:src="@drawable/speaker"
+            android:id="@+id/speakers"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+</LinearLayout>
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,7 +101,7 @@
                 android:padding="5dp"
                 android:textColor="#000080"
                 android:textSize="18dp"
-                android:textStyle="bold" />
+                android:textStyle="italic"/>
         </ScrollView>
     </LinearLayout>
 </LinearLayout>
